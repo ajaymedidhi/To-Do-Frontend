@@ -1,0 +1,162 @@
+/* Basic Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Todo Container */
+.todo-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.todo-container:hover {
+    transform: translateY(-2px);
+}
+
+/* Heading */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 2rem;
+} 
+
+#task-title{
+  
+    margin-bottom: 5px;
+    color: blue;
+    font-size: 25px;
+}
+
+/* Input Fields */
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: border-color 0.3s;
+    font-size: 1rem;
+}
+
+input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Button Styles */
+button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Task List */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s;
+}
+
+li:hover {
+    background-color: #f9f9f9;
+}
+
+/* Task Text */
+.task-details {
+    flex-grow: 1;
+}
+
+.task-title {
+    color: #333;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.task-status {
+    color: #777;
+    font-size: 0.9rem;
+}
+
+/* Icon Buttons */
+.icon-button {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.icon-button:hover {
+    transform: scale(1.1);
+}
+
+/* Edit Task Styles */
+.edit-task-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .todo-container {
+        padding: 15px;
+    }
+
+    input[type="text"] {
+        width: calc(100% - 15px);
+    }
+
+    button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .edit-task-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+/* Icon Styles */
+.delete-icon, .edit-icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    color: #333;
+}
+.button-group{
+    display: flex;
+}

@@ -1,0 +1,52 @@
+/* src/styles.css or inline styles in your component */
+nav {
+    background: hsl(241, 76%, 37%); 
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav h1 {
+    margin: 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-right: 15px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      display: none; /* Hide the menu initially on small screens */
+      width: 100%;
+    }
+  
+    nav ul.active {
+      display: flex; /* Show the menu when active */
+    }
+  
+    nav .toggle {
+      display: block; /* Show the toggle button on small screens */
+      cursor: pointer;
+      font-size: 20px;
+    }
+  
+    nav ul li {
+      margin: 10px 0; /* Add spacing between menu items */
+    }
+  }
+  

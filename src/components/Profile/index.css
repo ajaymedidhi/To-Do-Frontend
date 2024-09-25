@@ -1,0 +1,55 @@
+/* src/Profile.css */
+
+.container {
+    max-width: 600px; /* Max width for larger screens */
+    margin: 20px auto; /* Center the container */
+    padding: 20px;
+    border: 1px solid #ccc; /* Optional border for visual separation */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    background: #f9f9f9; /* Light background */
+  }
+  
+  h2 {
+    text-align: center; /* Center the heading */
+  }
+  
+  .profile-info,
+  .profile-edit {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    gap: 10px; /* Space between elements */
+  }
+  
+  input {
+    padding: 10px; /* Padding for input fields */
+    border: 1px solid #ccc; /* Border for input fields */
+    border-radius: 4px; /* Rounded corners for inputs */
+    width: 100%; /* Full width on smaller screens */
+  }
+  
+  button {
+    padding: 10px;
+    background: #007bff; /* Bootstrap primary color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%; /* Full width buttons */
+  }
+  
+  button:hover {
+    background: #0056b3; /* Darker blue on hover */
+  }
+  
+  @media (max-width: 600px) {
+    /* Styles for smaller screens */
+    h2 {
+      font-size: 1.5em; /* Larger font size for small screens */
+    }
+  
+    button {
+      margin-top: 10px; /* Space between buttons */
+    }
+  }
+  
